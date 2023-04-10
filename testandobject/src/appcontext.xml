@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns='http://www.springframework.org/schema/beans'
+     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+     xmlns:p='http://www.springframework.org/schema/p'
+     xsi:schemaLocation='http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans.xsd'>
+    
+    
+    
+    <bean id='p' class='com.abdalrhmn.Person'> 
+    <constructor-arg value='10' type='int'></constructor-arg>
+    <constructor-arg value='abdalrhmn' ></constructor-arg>
+    <constructor-arg ref='add'></constructor-arg>
+    
+    </bean>
+    
+     <bean id='add' class='com.abdalrhmn.Addresses'> 
+    <constructor-arg value='0111111111111' ></constructor-arg>
+    <constructor-arg value='abdalrhmn@gmail.com' ></constructor-arg>
+    <constructor-arg value='egypt' ></constructor-arg>
+    <constructor-arg value='beni souif' ></constructor-arg>
+    <constructor-arg value='13 sawora' ></constructor-arg>
+   
+    </bean>
+    
+    
+    
+    
+    
+    </beans>

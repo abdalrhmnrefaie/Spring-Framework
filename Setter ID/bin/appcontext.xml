@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns='http://www.springframework.org/schema/beans'
+     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+     xmlns:p='http://www.springframework.org/schema/p'
+     xsi:schemaLocation='http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans.xsd'>
+    
+    
+    
+ <bean id='p' class='com.abdalrhmn.Person'> 
+    <property name="id"><value>1</value></property>
+     <property name="personName"><value>abdalrhmn</value></property>
+      <property name="add" ref="address"></property>
+    
+ </bean>
+ 
+  <bean id='address' class='com.abdalrhmn.Addresses'> 
+    <property name="phone"><value>01111111111</value></property>
+    <property name="gmail"><value>abdalrhmn@gmail.com</value></property>
+     <property name="country"><value>egypt</value></property>
+      <property name="sity"><value>bein suef</value></property>
+       <property name="street"><value>1st200</value></property>
+ </bean>
+   
+    
+    
+    
+    
+    
+    </beans>

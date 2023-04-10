@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author abdal
+ *
+ */
+module text {
+}
